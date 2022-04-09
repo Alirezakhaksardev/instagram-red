@@ -8,10 +8,11 @@ import Options from './Account/Options';
 import Highlights from './Account/Highlights';
 import Listaccount from './Account/ListAccount';
 import Posts from './Account/Posts';
+import Usetitle from '../../hooks/useTitle';
 
     const Account = () => {
-
         useEffect(()=>{
+            Usetitle('Profile');
             var idA = document.getElementById('account');
             setTimeout(()=>{
                 idA.classList.remove('opacity-0');

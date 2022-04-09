@@ -1,8 +1,11 @@
 import React , {useEffect} from 'react';
+import Usetitle from '../../hooks/useTitle';
 
 const Discover = () => {
     
     useEffect(()=>{
+        Usetitle('Discover');
+
         var idA = document.getElementById('discover');
         setTimeout(()=>{
             idA.classList.remove('opacity-0');

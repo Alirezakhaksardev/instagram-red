@@ -9,6 +9,7 @@ import Menu from './components/Menu/Menu';
 import Header from './components/Main/Header';
 import Reels from './components/Main/Reels';
 import Discover from './components/Main/Discover';
+import Igshop from './components/Main/IG-Shop';
 
 // react router dom
 import {Routes,Route} from 'react-router-dom';
@@ -56,6 +57,7 @@ const App = () => {
                             <Route path='/Home' element={loading ? Divload : <Account />} />
                             <Route path='/Reels' element={loading ? Divload : <Reels />} />
                             <Route path='/Discover' element={loading ? Divload : <Discover />} />
+                            <Route path='/IG%20Shop' element={loading ? Divload : <Igshop />} />
                         </Routes> 
                         {/* Navbar button just form mobile size (lg:hidden) */}
                         <div className="border-t border-rose-300 fixed bottom-0 w-full lg:hidden bg-gray-50 px-5 py-1 bg-gradient-to-t">
